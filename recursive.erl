@@ -1,7 +1,7 @@
 -module(recursive).
 -export([fac/1, len/1, tail_fac/1, tail_len/1, duplicate/2, tail_duplicate/2,
         reverse/1, tail_reverse/1, sublist/2, tail_sublist/2,
-        tail_sublist_2/2, zip/2, lenient_zip/2, noomit_zip/2]).
+        tail_sublist_2/2, zip/2, lenient_zip/2, noomit_zip/2, quicksort/1]).
 
 fac(N) when N == 0 -> 1;
 fac(N) when N >  0 -> N * fac(N-1).
@@ -78,3 +78,15 @@ noomit_zip([], []) -> [];
 noomit_zip([], [Y|Ys]) -> [{[],Y}|noomit_zip([], Ys)];
 noomit_zip([X|Xs], []) -> [{X,[]}|noomit_zip(Xs, [])];
 noomit_zip([X|Xs], [Y|Ys]) -> [{X,Y}|noomit_zip(Xs, Ys)].
+
+
+quicksort([]) -> [];
+quicksort([Pivot|Rest]) ->
+    {Smaller, Larger} = partition(Pivot, Rest, [], []),
+    quicksort(Smaller) ++ [Pivot] ++ quicksort(Larger).
+
+partition(_, [], Smaller, Larger) -> {Smaller, Larger};
+partition(Pivot, [H|T], Smaller, Larger) ->
+    if H =< Pivot -> partition(Pivot, T, [H|Smaller], Larger);
+       H >  Pivot -> partition(Pivot, T, Smaller, [H|Larger])
+    end.
