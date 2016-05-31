@@ -142,3 +142,10 @@ ok
 25> linkmon:judge2("Genesis", "The Lambda").
 "They are terrible!"
 26> 
+
+32> c(linkmon).             
+{ok,linkmon}
+33> linkmon:start_critic2().
+<0.157.0>
+34> linkmon:judge2("The Doors","Light my Firewall").
+"They are terrible!"

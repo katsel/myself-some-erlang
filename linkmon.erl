@@ -1,6 +1,6 @@
 -module(linkmon).
 -export([myproc/0, chain/1, start_critic/0, judge/3, critic/0,
-        start_critic2/0, restarter/0, judge2/2]).
+        start_critic2/0, restarter/0, judge2/2, critic2/0]).
 
 myproc() ->
     timer:sleep(5000),
@@ -46,7 +46,7 @@ start_critic2() ->
 
 restarter() ->
     process_flag(trap_exit, true),
-    Pid = spawn_link(?MODULE, critic, []),
+    Pid = spawn_link(?MODULE, critic2, []),
     register(critic, Pid),
     receive
         {'EXIT', Pid, normal} -> % not a crash
@@ -58,10 +58,17 @@ restarter() ->
     end.
 
 judge2(Band, Album) ->
-    critic ! {self(), {Band, Album}},
-    Pid = whereis(critic),
+    Ref = make_ref(),
+    critic ! {self(), Ref, {Band, Album}},
     receive
-        {Pid, Criticism} -> Criticism
+        {Ref, Criticism} -> Criticism
     after 2000 ->
         timeout
     end.
+
+critic2() ->
+    receive
+        {From, Ref, {_Band, _Album}} ->
+            From ! {Ref, "They are terrible!"}
+    end,
+    critic2().
