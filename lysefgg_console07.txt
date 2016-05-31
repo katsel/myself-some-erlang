@@ -58,3 +58,47 @@ ok
 {ok,dog}
 24> kitchen:take(Pid, dog).
 not_found
+25> pid(0,250,0).
+<0.250.0>
+26> self().
+<0.57.0>
+27> kitchen:take(pid(0,250,0), dog).
+
+User switch command
+ --> k
+ --> s
+ --> c
+Eshell V7.3.1  (abort with ^G)
+1> 
+User switch command
+ --> 
+ --> h
+  c [nn]            - connect to job
+  i [nn]            - interrupt job
+  k [nn]            - kill job
+  j                 - list all jobs
+  s [shell]         - start local shell
+  r [node [shell]]  - start remote shell
+  q                 - quit erlang
+  ? | h             - this message
+ --> s
+ --> c
+Eshell V7.3.1  (abort with ^G)
+1> c(kitchen).
+{ok,kitchen}
+2> kitchen:take2(pid(0,250,0), dog).
+timeout
+3> 
+4> c(multiproc).
+{ok,multiproc}
+5> self() ! {15, high}, self() ! {7, low}, self() ! {1, low}, self() ! {17, high}.
+{17,high}
+6> self() ! {25, high}, self() ! {7, low}, self() ! {1, low}, self() ! {17, high}.
+{17,high}
+7> multiproc:important().
+[high,high,high,high,low,low,low,low]
+8> multiproc:important().
+[]
+9> self() ! {25, high}, self() ! {7, low}, self() ! {1, low}, self() ! {17, high}.
+{17,high}
+10> multiproc:important().                                                      [high,high,low,low]
