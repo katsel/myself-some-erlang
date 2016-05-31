@@ -1,0 +1,87 @@
+12> c(linkmon).
+{ok,linkmon}
+13> spawn(fun linkmon:myproc/0).
+<0.121.0>
+14> spawn(fun linkmon:myproc/0).
+<0.123.0>
+15> link(spawn(fun linkmon:myproc/0)).
+true
+** exception error: reason
+16> link(spawn(fun linkmon:myproc/0)).
+true
+17> c(linkmon).
+{ok,linkmon}
+** exception error: reason
+18> c(linkmon).
+linkmon.erl:10: syntax error before: _
+error
+19> c(linkmon).
+linkmon.erl:8: Warning: function chain/1 is unused
+{ok,linkmon}
+20> c(linkmon).
+{ok,linkmon}
+21> link(spawn(linkmon, chain, [3])).
+true
+** exception error: "chain dies here"
+22> link(spawn(linkmon, chain, [10])).
+true
+** exception error: "chain dies here"
+23> c(linkmon).                       
+linkmon.erl:11: function sleep/1 undefined
+error
+24> c(linkmon).
+{ok,linkmon}
+25> link(spawn(linkmon, chain, [10])).
+true
+** exception error: "chain dies here"
+26> link(spawn(linkmon, chain, [100])).
+true
+** exception error: "chain dies here"
+27> c(linkmon).                        
+{ok,linkmon}
+28> link(spawn(linkmon, chain, [1])).  
+true
+** exception error: "chain dies here"
+29> link(spawn(linkmon, chain, [10])).
+true
+** exception error: "chain dies here"
+30> link(spawn(linkmon, chain, [100])).
+true
+** exception error: "chain dies here"
+31> c(linkmon).                        
+{ok,linkmon}
+32> link(spawn(linkmon, chain, [100])).
+true
+** exception error: "chain dies here"
+33> link(spawn(linkmon, chain, [1])).  
+true
+** exception error: "chain dies here"
+34> c(linkmon).                        
+{ok,linkmon}
+35> link(spawn(linkmon, chain, [100])).
+true
+36> link(spawn(linkmon, chain, [20])). 
+true
+** exception error: "chain dies here"
+37> exit(kill).
+** exception exit: kill
+38> exit(kill).
+** exception exit: kill
+39> exit(spawn_link(fun() -> exit(kill) end), normal).
+** exception exit: killed
+40> exit(spawn_link(fun() -> exit(kill) end), kill).  
+** exception exit: killed
+41> spawn_link(fun() -> exit(kill) end).            
+** exception exit: killed
+42> process_flag(trap_exit, true).
+false
+43> process_flag(trap_exit, true).
+true
+44> process_flag(trap_exit, true).
+true
+45> spawn_link(fun() -> exit(kill) end).
+<0.616.0>
+46> exit(self(), normal).
+true
+47> receive X -> X end.
+{'EXIT',<0.616.0>,kill}
