@@ -7,9 +7,17 @@ Learning Erlang with [Learn you some Erlang for great good!][lyse]
 # Chapters
 
 0. <a href="http://learnyousomeerlang.com/introduction">Introduction</a>, <a href="http://learnyousomeerlang.com/starting-out">Starting Out</a>
+    * [console log](log01.txt)
 0. <a href="http://learnyousomeerlang.com/starting-out-for-real">Starting Out (for real)</a>
+    * [console log](log02.txt)
 0. <a href="http://learnyousomeerlang.com/modules">Modules</a>
+    * [useless.erl](useless.erl)
+    * [console log](log03.txt)
 0. <a href="http://learnyousomeerlang.com/syntax-in-functions">Syntax in Functions</a>
+    * [functions.erl](functions.erl)
+    * [what_the_if.erl](what_the_if.erl)
+    * [cases.erl](cases.erl)
+    * [console log](log04.txt)
 0. <a href="http://learnyousomeerlang.com/types-or-lack-thereof">Types (or lack thereof)</a>
 0. <a href="http://learnyousomeerlang.com/recursion">Recursion</a>
 0. <a href="http://learnyousomeerlang.com/higher-order-functions">Higher Order Functions</a>
