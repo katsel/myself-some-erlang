@@ -62,4 +62,5 @@ Learning Erlang with [Learn you some Erlang for great good!][lyse]
 0. <a href="http://learnyousomeerlang.com/dialyzer">Type Specifications and Erlang</a>
 0. <a href="http://learnyousomeerlang.com/conclusion">Conclusion</a>
 0. <a href="http://learnyousomeerlang.com/maps">Postscript: Maps</a>
+    * [console log](log34.txt)
 0. <a href="http://learnyousomeerlang.com/time">Postscript: Time Goes On</a>
