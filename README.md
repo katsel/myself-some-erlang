@@ -28,6 +28,8 @@ Learning Erlang with [Learn you some Erlang for great good!][lyse]
     * [hhfuns.erl](hhfuns.erl)
     * [console log](log07.txt)
 0. <a href="http://learnyousomeerlang.com/errors-and-exceptions">Errors and Exceptions</a>
+    * [exceptions.erl](exceptions.erl)
+    * [console log](log08.txt)
 0. <a href="http://learnyousomeerlang.com/functionally-solving-problems">Functionally Solving Problems</a>
 0. <a href="http://learnyousomeerlang.com/a-short-visit-to-common-data-structures">A Short Visit to Common Data Structures</a>
 0. <a href="http://learnyousomeerlang.com/the-hitchhikers-guide-to-concurrency">The Hitchhiker's Guide to Concurrency</a>
