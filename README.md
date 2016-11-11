@@ -35,6 +35,9 @@ Learning Erlang with [Learn you some Erlang for great good!][lyse]
     * Reverse Polish Notation Calculator [calc.erl](calc.erl)
     * [road.erl](road.erl), [road.txt](road.txt)
 0. <a href="http://learnyousomeerlang.com/a-short-visit-to-common-data-structures">A Short Visit to Common Data Structures</a>
+    * [records.erl](records.erl), [records.hrl](records.hrl)
+    * [keyval_benchmark.erl](keyval_benchmark.erl)
+    * [console log](log10.txt)
 0. <a href="http://learnyousomeerlang.com/the-hitchhikers-guide-to-concurrency">The Hitchhiker's Guide to Concurrency</a>
 0. <a href="http://learnyousomeerlang.com/more-on-multiprocessing">More On Multiprocessing</a>
 0. <a href="http://learnyousomeerlang.com/errors-and-processes">Errors and Processes</a>
