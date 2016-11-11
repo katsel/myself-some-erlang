@@ -19,7 +19,11 @@ Learning Erlang with [Learn you some Erlang for great good!][lyse]
     * [cases.erl](cases.erl)
     * [console log](log04.txt)
 0. <a href="http://learnyousomeerlang.com/types-or-lack-thereof">Types (or lack thereof)</a>
+    * [console log](log05.txt)
 0. <a href="http://learnyousomeerlang.com/recursion">Recursion</a>
+    * [recursive.erl](recursive.erl)
+    * [tree.erl](tree.erl) - incomplete
+    * [console log](log06.txt)
 0. <a href="http://learnyousomeerlang.com/higher-order-functions">Higher Order Functions</a>
 0. <a href="http://learnyousomeerlang.com/errors-and-exceptions">Errors and Exceptions</a>
 0. <a href="http://learnyousomeerlang.com/functionally-solving-problems">Functionally Solving Problems</a>
