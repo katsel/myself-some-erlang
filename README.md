@@ -46,6 +46,8 @@ Learning Erlang with [Learn you some Erlang for great good!][lyse]
     * [multiproc.erl](multiproc.erl)
     * [console log](log12.txt)
 0. <a href="http://learnyousomeerlang.com/errors-and-processes">Errors and Processes</a>
+    * [linkmon.erl](linkmon.erl)
+    * [console log](log13.txt)
 0. <a href="http://learnyousomeerlang.com/designing-a-concurrent-application">Designing a Concurrent Application</a>
 0. <a href="http://learnyousomeerlang.com/what-is-otp">What is OTP?</a>
 0. <a href="http://learnyousomeerlang.com/clients-and-servers">Clients and Servers</a>
