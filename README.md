@@ -51,6 +51,8 @@ Learning Erlang with [Learn you some Erlang for great good!][lyse]
 0. <a href="http://learnyousomeerlang.com/designing-a-concurrent-application">Designing a Concurrent Application</a>
 0. <a href="http://learnyousomeerlang.com/what-is-otp">What is OTP?</a>
 0. <a href="http://learnyousomeerlang.com/clients-and-servers">Clients and Servers</a>
+    * [kitty_gen_server.erl](kitty_gen_server.erl)
+    * [console log](log16.txt)
 0. <a href="http://learnyousomeerlang.com/finite-state-machines">Rage Against The Finite-State Machines</a>
 0. <a href="http://learnyousomeerlang.com/event-handlers">Event Handlers</a>
 0. <a href="http://learnyousomeerlang.com/supervisors">Who Supervises The Supervisors?</a>
