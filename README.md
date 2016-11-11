@@ -60,7 +60,9 @@ Learning Erlang with [Learn you some Erlang for great good!][lyse]
 0. <a href="http://learnyousomeerlang.com/release-is-the-word">Release is the Word</a>
 0. <a href="http://learnyousomeerlang.com/relups">Leveling Up in The Process Quest</a>
 0. <a href="http://learnyousomeerlang.com/buckets-of-sockets">Buckets Of Sockets</a>
-0. <a href="http://learnyousomeerlang.com/eunit">EUnited Nations Council</a>
+0. <a href="http://learnyousomeerlang.com/eunit">EUnited Nations Council</a> - incomplete
+    * [ops.erl](ops.erl), [ops_tests.erl](ops_tests.erl)
+    * [console log](log26.txt)
 0. <a href="http://learnyousomeerlang.com/ets">Bears, ETS, Beets</a>
 0. <a href="http://learnyousomeerlang.com/distribunomicon">Distribunomicon</a>
 0. <a href="http://learnyousomeerlang.com/distributed-otp-applications">Distributed OTP Applications</a>
