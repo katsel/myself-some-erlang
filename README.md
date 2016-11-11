@@ -29,8 +29,11 @@ Learning Erlang with [Learn you some Erlang for great good!][lyse]
     * [console log](log07.txt)
 0. <a href="http://learnyousomeerlang.com/errors-and-exceptions">Errors and Exceptions</a>
     * [exceptions.erl](exceptions.erl)
+    * [tree.erl](tree.erl) - incomplete
     * [console log](log08.txt)
 0. <a href="http://learnyousomeerlang.com/functionally-solving-problems">Functionally Solving Problems</a>
+    * Reverse Polish Notation Calculator [calc.erl](calc.erl)
+    * [road.erl](road.erl), [road.txt](road.txt)
 0. <a href="http://learnyousomeerlang.com/a-short-visit-to-common-data-structures">A Short Visit to Common Data Structures</a>
 0. <a href="http://learnyousomeerlang.com/the-hitchhikers-guide-to-concurrency">The Hitchhiker's Guide to Concurrency</a>
 0. <a href="http://learnyousomeerlang.com/more-on-multiprocessing">More On Multiprocessing</a>
