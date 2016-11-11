@@ -42,6 +42,9 @@ Learning Erlang with [Learn you some Erlang for great good!][lyse]
     * [dolphins.erl](dolphins.erl)
     * [console log](log11.txt)
 0. <a href="http://learnyousomeerlang.com/more-on-multiprocessing">More On Multiprocessing</a>
+    * [kitchen.erl](kitchen.erl)
+    * [multiproc.erl](multiproc.erl)
+    * [console log](log12.txt)
 0. <a href="http://learnyousomeerlang.com/errors-and-processes">Errors and Processes</a>
 0. <a href="http://learnyousomeerlang.com/designing-a-concurrent-application">Designing a Concurrent Application</a>
 0. <a href="http://learnyousomeerlang.com/what-is-otp">What is OTP?</a>
