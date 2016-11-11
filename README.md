@@ -25,6 +25,8 @@ Learning Erlang with [Learn you some Erlang for great good!][lyse]
     * [tree.erl](tree.erl) - incomplete
     * [console log](log06.txt)
 0. <a href="http://learnyousomeerlang.com/higher-order-functions">Higher Order Functions</a>
+    * [hhfuns.erl](hhfuns.erl)
+    * [console log](log07.txt)
 0. <a href="http://learnyousomeerlang.com/errors-and-exceptions">Errors and Exceptions</a>
 0. <a href="http://learnyousomeerlang.com/functionally-solving-problems">Functionally Solving Problems</a>
 0. <a href="http://learnyousomeerlang.com/a-short-visit-to-common-data-structures">A Short Visit to Common Data Structures</a>
