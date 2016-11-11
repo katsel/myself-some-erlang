@@ -39,6 +39,8 @@ Learning Erlang with [Learn you some Erlang for great good!][lyse]
     * [keyval_benchmark.erl](keyval_benchmark.erl)
     * [console log](log10.txt)
 0. <a href="http://learnyousomeerlang.com/the-hitchhikers-guide-to-concurrency">The Hitchhiker's Guide to Concurrency</a>
+    * [dolphins.erl](dolphins.erl)
+    * [console log](log11.txt)
 0. <a href="http://learnyousomeerlang.com/more-on-multiprocessing">More On Multiprocessing</a>
 0. <a href="http://learnyousomeerlang.com/errors-and-processes">Errors and Processes</a>
 0. <a href="http://learnyousomeerlang.com/designing-a-concurrent-application">Designing a Concurrent Application</a>
