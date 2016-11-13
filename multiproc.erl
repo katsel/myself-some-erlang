@@ -2,10 +2,11 @@
 -compile(export_all).
 
 sleep(T) ->
-    receive
-    after T -> ok
+    receive         % receive nothing
+    after T -> ok   % called once delay T has passed
     end.
 
+%% flush all messages in inbox (do nothing)
 flush() ->
     receive
         _ -> flush()
@@ -13,6 +14,7 @@ flush() ->
         ok
     end.
 
+%% selective receives
 important() ->
     receive
         {Priority, Message} when Priority > 10 ->

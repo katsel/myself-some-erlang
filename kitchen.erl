@@ -1,6 +1,7 @@
 -module(kitchen).
 -compile(export_all).
 
+%% fridge1 is not able to store food (no state)
 fridge1() ->
     receive
         {From, {store, _Food}} ->
@@ -14,6 +15,7 @@ fridge1() ->
             ok
     end.
 
+%% fridge2 keeps state in FoodList variable
 fridge2(FoodList) ->
     receive
         {From, {store, Food}} ->
@@ -32,6 +34,7 @@ fridge2(FoodList) ->
             ok
     end.
 
+%% wrap in functions to keep messages secret
 store(Pid, Food) ->
     Pid ! {self(), {store, Food}},
     receive

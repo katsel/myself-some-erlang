@@ -1,6 +1,7 @@
 -module(dolphins).
 -compile(export_all).
 
+%% dolphin1 prints a message and exits
 dolphin1() ->
     receive
         do_a_flip ->
@@ -11,6 +12,7 @@ dolphin1() ->
             io:format("Heh, we're smarter than you humans.~n")
     end.
 
+%% dolphin2 returns a message to the sender and exits
 dolphin2() ->
     receive
         {From, do_a_flip} ->
@@ -21,6 +23,7 @@ dolphin2() ->
             io:format("Heh, we're smarter than you humans.~n")
     end.
 
+%% dolphin3 returns a message to the sender and restarts itself
 dolphin3() ->
     receive
         {From, do_a_flip} ->
