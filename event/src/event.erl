@@ -33,7 +33,7 @@ cancel(Pid) ->
     end.
 
 %%% Event's innards
-init(Server, EventName, Delay) ->
+init(Server, EventName, DateTime) ->
     loop(#state{server=Server,
                 name=EventName,
                 to_go=time_to_go(DateTime)}).
