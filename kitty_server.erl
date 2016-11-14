@@ -62,8 +62,7 @@ loop(Cats) ->
             loop([Cat|Cats]);
         % shop terminated
         {Pid, Ref, terminate} ->
-            Pid ! {Ref, ok},
-            terminate(Cats);
+            Pid ! {Ref, terminate(Cats)};
         % unknown message received
         Unknown ->
             io:format("Unknown message: ~p~n", [Unknown]),  % logging
