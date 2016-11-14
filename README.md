@@ -48,8 +48,8 @@ Learning Erlang with [Learn you some Erlang for great good!][lyse]
 0. <a href="http://learnyousomeerlang.com/errors-and-processes">Errors and Processes</a> ✅
     * [linkmon.erl](linkmon.erl)
     * [console log](log13.erl)
-0. <a href="http://learnyousomeerlang.com/designing-a-concurrent-application">Designing a Concurrent Application</a> ⏳
-    * [event server](event/)
+0. <a href="http://learnyousomeerlang.com/designing-a-concurrent-application">Designing a Concurrent Application</a> ✅
+    * event server: [event/src/event.erl](event/src/event.erl), [event/src/evserv.erl](event/src/evserv.erl), [event/Emakefile](event/Emakefile)
     * [console log](log14.erl)
 0. <a href="http://learnyousomeerlang.com/what-is-otp">What is OTP?</a>
 0. <a href="http://learnyousomeerlang.com/clients-and-servers">Clients and Servers</a> ✅
