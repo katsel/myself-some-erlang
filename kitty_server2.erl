@@ -16,7 +16,8 @@
 -record(cat, {name, color=green, description}).
 
 %%% Client API
-start_link() -> my_server:start_link(?MODULE, []).
+start_link() ->
+    my_server:start_link(?MODULE, []).
 
 order_cat(Pid, Name, Color, Description) ->  % synchronous
     my_server:call(Pid, {order, Name, Color, Description}).
@@ -28,7 +29,8 @@ close_shop(Pid) ->  % synchronous
     my_server:call(Pid, terminate).
 
 %%% Server functions
-init([]) -> [].
+init([]) ->
+    [].  % no treatment of info here!
 
 % kitty ordered
 handle_call({order, Name, Color, Description}, From, Cats) ->
