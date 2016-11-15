@@ -58,7 +58,9 @@ Learning Erlang with [Learn you some Erlang for great good!][lyse]
 0. <a href="http://learnyousomeerlang.com/clients-and-servers">Clients and Servers</a> ✅
     * [kitty_gen_server.erl](kitty_gen_server.erl)
     * [console log](log16.erl)
-0. <a href="http://learnyousomeerlang.com/finite-state-machines">Rage Against The Finite-State Machines</a>
+0. <a href="http://learnyousomeerlang.com/finite-state-machines">Rage Against The Finite-State Machines</a> ⏳
+    * [cat_fsm.erl](cat_fsm.erl), [dog_fsm.erl](dog_fsm.erl)
+    * [console log](log17.erl)
 0. <a href="http://learnyousomeerlang.com/event-handlers">Event Handlers</a>
 0. <a href="http://learnyousomeerlang.com/supervisors">Who Supervises The Supervisors?</a>
 0. <a href="http://learnyousomeerlang.com/building-applications-with-otp">Building an Application With OTP</a>
